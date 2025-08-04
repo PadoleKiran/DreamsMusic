@@ -21,6 +21,3 @@ A fast and powerful Telegram Music Bot for playing songs in Voice Chats. Based o
 - MongoDB URI
 - Telegram Bot Token
 - Pyrogram String Session (optional)
-
-## License
-MIT
