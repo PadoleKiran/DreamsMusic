@@ -2,7 +2,10 @@ services:
   - type: web
     name: DreamsMusic
     runtime: python
+<<<<<<< HEAD
     plan: free
+=======
+>>>>>>> 6f44fcf168a5bb46336301c0e48b584e74efcfc4
     buildCommand: pip install -r requirements.txt
     startCommand: python3 main.py
     envVars:
@@ -12,7 +15,18 @@ services:
         value: your_api_hash
       - key: BOT_TOKEN
         value: your_bot_token
+<<<<<<< HEAD
       - key: MONGO_DB_URI
         value: your_mongodb_uri
       - key: STRING_SESSION
         value: your_string_session
+=======
+      - key: MONGO_URI
+        value: your_mongo_uri
+      - key: OWNER_ID
+        value: your_owner_id
+      - key: LOG_GROUP_ID
+        value: your_log_group_id
+      - key: STRING_SESSION
+        value: your_optional_string
+>>>>>>> 6f44fcf168a5bb46336301c0e48b584e74efcfc4
