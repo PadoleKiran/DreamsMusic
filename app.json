@@ -1,0 +1,38 @@
+{
+  "name": "DreamsMusic - Telegram Music Bot",
+  "description": "Telegram Music Bot to play songs in VC, powered by PyTgCalls.",
+  "repository": "https://github.com/DreamsRobot/DreamsMusic",
+  "logo": "https://telegra.ph/file/626c1813c01b1c7e17fc6.jpg",
+  "keywords": ["telegram", "music", "bot", "groupcalls", "pytgcalls"],
+  "env": {
+    "API_ID": {
+      "description": "Get this from https://my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this from https://my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from BotFather",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "Your MongoDB URI for DB usage",
+      "required": true
+    },
+    "LOG_GROUP_ID": {
+      "description": "Log group ID (make sure bot is admin)",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Pyrogram v1/v2 string session",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
